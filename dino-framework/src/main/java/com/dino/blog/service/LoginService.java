@@ -1,6 +1,5 @@
 package com.dino.blog.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.domain.entity.User;
 
@@ -10,4 +9,6 @@ import com.dino.blog.domain.entity.User;
  */
 public interface LoginService {
     ResponseResult login(User user);
+
+    ResponseResult logout();
 }

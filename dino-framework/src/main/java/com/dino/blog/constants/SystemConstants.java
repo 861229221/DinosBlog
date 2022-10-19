@@ -35,5 +35,5 @@ public class SystemConstants {
     /**
      * Redis用户前缀
      */
-    public static final  String USER_LOGIN_PREFIX = "blogLogin";
+    public static final  String USER_LOGIN_PREFIX = "blogLogin:";
 }

@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类">
-      <change afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/config/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/entity/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/vo/BlogLoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/vo/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/WebUtils.java" afterDir="false" />
+    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/mapper/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +129,7 @@
       <workItem from="1666084039161" duration="11982000" />
       <workItem from="1666099945769" duration="149000" />
       <workItem from="1666100166147" duration="2274000" />
-      <workItem from="1666143596977" duration="9873000" />
+      <workItem from="1666143596977" duration="14425000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -171,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666158443492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类">
+      <created>1666158715003</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666158715003</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,5 +190,16 @@
     <MESSAGE value="解决异常" />
     <MESSAGE value="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类" />
     <option name="LAST_COMMIT_MESSAGE" value="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
