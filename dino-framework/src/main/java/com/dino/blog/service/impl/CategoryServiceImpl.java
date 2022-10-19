@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dino.blog.constants.SystemConstants;
 import com.dino.blog.domain.ResponseResult;
-import com.dino.blog.domain.dto.CategoryDto;
+import com.dino.blog.domain.vo.CategoryVo;
 import com.dino.blog.domain.entity.Article;
 import com.dino.blog.domain.entity.Category;
 import com.dino.blog.mapper.CategoryMapper;
@@ -47,17 +47,17 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
                 filter(category -> SystemConstants.STATUS_NORMAL.equals(category.getStatus()))
                 .collect(Collectors.toList());
         //封装dto
-        List<CategoryDto> categoryDtos = BeanCopyUtils.copyBeanList(categories, CategoryDto.class);
+        List<CategoryVo> categoryDtos = BeanCopyUtils.copyBeanList(categories, CategoryVo.class);
 
         return ResponseResult.okResult(categoryDtos);
     }
 
     @Override
-    public List<CategoryDto> listAllCategory() {
+    public List<CategoryVo> listAllCategory() {
         LambdaQueryWrapper<Category> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(Category::getStatus, SystemConstants.NORMAL);
         List<Category> list = list(wrapper);
-        List<CategoryDto> categoryDtos = BeanCopyUtils.copyBeanList(list, CategoryDto.class);
+        List<CategoryVo> categoryDtos = BeanCopyUtils.copyBeanList(list, CategoryVo.class);
         return categoryDtos;
     }
 }

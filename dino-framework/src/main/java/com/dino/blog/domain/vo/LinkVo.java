@@ -1,10 +1,8 @@
-package com.dino.blog.domain.dto;
+package com.dino.blog.domain.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
 
 /**
  * Created 10-19-2022  11:00 AM
@@ -13,7 +11,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LinkDto {
+public class LinkVo {
     private Long id;
 
     private String name;

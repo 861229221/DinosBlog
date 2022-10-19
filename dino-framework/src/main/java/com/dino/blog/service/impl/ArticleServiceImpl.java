@@ -6,10 +6,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dino.blog.constants.SystemConstants;
 import com.dino.blog.domain.ResponseResult;
-import com.dino.blog.domain.dto.ArticleDetailDto;
-import com.dino.blog.domain.dto.ArticleListDto;
-import com.dino.blog.domain.dto.HotArticleDto;
-import com.dino.blog.domain.dto.PageDto;
+import com.dino.blog.domain.vo.ArticleDetailVo;
+import com.dino.blog.domain.vo.ArticleListVo;
+import com.dino.blog.domain.vo.HotArticleVo;
+import com.dino.blog.domain.vo.PageVo;
 import com.dino.blog.domain.entity.Article;
 import com.dino.blog.domain.entity.Category;
 import com.dino.blog.mapper.ArticleMapper;
@@ -49,7 +49,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 //            BeanUtils.copyProperties(article,vo);
 //            articleVos.add(vo);
 //        }
-        List<HotArticleDto> vs = BeanCopyUtils.copyBeanList(articles, HotArticleDto.class);
+        List<HotArticleVo> vs = BeanCopyUtils.copyBeanList(articles, HotArticleVo.class);
         return ResponseResult.okResult(vs);
     }
 
@@ -81,12 +81,12 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
 
         //封装查询结果
-        List<ArticleListDto> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListDto.class);
+        List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListVo.class);
 
 
 
 
-        PageDto pageVo = new PageDto(articleListVos,page.getTotal());
+        PageVo pageVo = new PageVo(articleListVos,page.getTotal());
         return ResponseResult.okResult(pageVo);
     }
 
@@ -95,7 +95,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         //根据id查询文章
         Article article = getById(id);
         //转换成VO
-        ArticleDetailDto articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailDto.class);
+        ArticleDetailVo articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailVo.class);
         //根据分类id查询分类名
         Long categoryId = articleDetailVo.getCategoryId();
         Category category = categoryService.getById(categoryId);

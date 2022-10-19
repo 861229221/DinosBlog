@@ -3,7 +3,7 @@ package com.dino.blog.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dino.blog.domain.ResponseResult;
-import com.dino.blog.domain.dto.CategoryDto;
+import com.dino.blog.domain.vo.CategoryVo;
 import com.dino.blog.domain.entity.Category;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public interface CategoryService extends IService<Category> {
 
     ResponseResult getCategoryList();
 
-    List<CategoryDto> listAllCategory();
+    List<CategoryVo> listAllCategory();
 
 }
 

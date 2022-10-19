@@ -2,6 +2,7 @@ package com.dino.blog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dino.blog.domain.entity.User;
+import org.springframework.stereotype.Repository;
 
 
 /**
@@ -10,6 +11,7 @@ import com.dino.blog.domain.entity.User;
  * @author dino
  * @since 2022-10-19 11:10:12
  */
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }

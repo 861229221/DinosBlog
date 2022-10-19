@@ -1,4 +1,4 @@
-package com.dino.blog.domain.dto;
+package com.dino.blog.domain.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArticleDetailDto {
+public class ArticleDetailVo {
 
     private Long id;
     //标题

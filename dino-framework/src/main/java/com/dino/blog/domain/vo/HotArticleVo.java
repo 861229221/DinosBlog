@@ -1,4 +1,5 @@
-package com.dino.blog.domain.dto;
+package com.dino.blog.domain.vo;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,10 +8,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CategoryDto {
-
+public class HotArticleVo {
     private Long id;
-    private String name;
-    //描述
-    private String description;
+    //标题
+    private String title;
+
+    //访问量
+    private Long viewCount;
 }
