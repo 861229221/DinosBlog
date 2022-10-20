@@ -6,13 +6,11 @@ package com.dino.blog.controller;
  */
 
 import com.dino.blog.domain.ResponseResult;
+import com.dino.blog.domain.entity.User;
 import com.dino.blog.domain.vo.UserInfoVo;
 import com.dino.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
 
@@ -30,5 +28,10 @@ public class UserController {
     @PutMapping("/userInfo")
     public ResponseResult updateUserInfo(@RequestBody UserInfoVo userInfoVo){
         return userService.updateUserInfo(userInfoVo);
+    }
+
+    @PostMapping("/register")
+    public ResponseResult register(@RequestBody User user){
+        return userService.register(user);
     }
 }
