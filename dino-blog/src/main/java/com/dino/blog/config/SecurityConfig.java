@@ -6,6 +6,7 @@ import com.dino.blog.handler.security.AuthenticationEntryPointImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -53,6 +54,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 对于登陆接口，允许匿名访问
                 .antMatchers("/login").anonymous()
                 .antMatchers("/logout").authenticated()
+                .antMatchers(HttpMethod.POST,"/comment").authenticated()
+                .antMatchers("/user/userInfo").authenticated()
                 // 除了上面的请求，不需要认证就可以访问
                 .anyRequest().permitAll();
         // 配置自定义异常处理器

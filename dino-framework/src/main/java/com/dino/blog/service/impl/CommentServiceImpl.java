@@ -6,8 +6,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dino.blog.constants.SystemConstants;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.domain.entity.Comment;
-import com.dino.blog.domain.entity.LoginUser;
-import com.dino.blog.domain.entity.User;
 import com.dino.blog.domain.vo.CommentVO;
 import com.dino.blog.domain.vo.PageVo;
 import com.dino.blog.enums.AppHttpCodeEnum;
@@ -18,12 +16,8 @@ import com.dino.blog.service.UserService;
 import com.dino.blog.utils.BeanCopyUtils;
 import com.qiniu.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 

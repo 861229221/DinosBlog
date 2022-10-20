@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="全局异常处理，SysException捕获">
+    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="个人信息m">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +75,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facet" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.36480185" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -91,7 +95,23 @@
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DinoBlogApplication">
+    <configuration name="OSSTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dino-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dino.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dino" />
+      <option name="MAIN_CLASS_NAME" value="com.dino.OSSTest" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DinoBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dino-blog" />
       <extension name="coverage">
@@ -108,6 +128,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DinoBlogApplication" />
+        <item itemvalue="JUnit.OSSTest.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +147,8 @@
       <workItem from="1666099945769" duration="149000" />
       <workItem from="1666100166147" duration="2274000" />
       <workItem from="1666143596977" duration="19132000" />
-      <workItem from="1666231258828" duration="5633000" />
+      <workItem from="1666231258828" duration="11934000" />
+      <workItem from="1666253597064" duration="4957000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -177,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666167290580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="实现了文章评论和友链评论">
+      <created>1666238440544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666238440544</updated>
+    </task>
+    <task id="LOCAL-00009" summary="实现了文章评论和友链评论">
+      <created>1666238612117</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666238612117</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,17 +230,11 @@
     <MESSAGE value="解决异常" />
     <MESSAGE value="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类" />
     <MESSAGE value="全局异常处理，SysException捕获" />
-    <option name="LAST_COMMIT_MESSAGE" value="全局异常处理，SysException捕获" />
+    <MESSAGE value="实现了文章评论和友链评论" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现了文章评论和友链评论" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

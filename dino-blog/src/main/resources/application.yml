@@ -19,3 +19,8 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+oss:
+  accessKey: "dVgUqyW0Ju-hkN-9wVw-yGwrRfhb9DJnQATBjag0"
+  secretKey: "u94svu3oXpgMStdWfWmbvycethb2_XsseK8G2UPz"
+  bucket: "donalddino"
+  urlPrefix: "http://rk1h2xuv8.hb-bkt.clouddn.com/"
