@@ -1,5 +1,6 @@
 package com.dino.blog.controller;
 
+import com.dino.blog.annotation.SystemLog;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.service.UploadService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class UploadController {
     private UploadService uploadService;
 
     @PostMapping
+    @SystemLog(businessName = "上传头像照片")
     public ResponseResult upload(@RequestBody MultipartFile img) {
         return uploadService.upload(img);
     }

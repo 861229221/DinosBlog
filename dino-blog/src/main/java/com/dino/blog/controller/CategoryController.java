@@ -1,5 +1,6 @@
 package com.dino.blog.controller;
 
+import com.dino.blog.annotation.SystemLog;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("/getCategoryList")
+    @SystemLog(businessName = "获取分类集合")
     public ResponseResult getCategoryList(){
         return categoryService.getCategoryList();
     }

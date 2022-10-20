@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/UploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +148,7 @@
       <workItem from="1666100166147" duration="2274000" />
       <workItem from="1666143596977" duration="19132000" />
       <workItem from="1666231258828" duration="11934000" />
-      <workItem from="1666253597064" duration="7923000" />
+      <workItem from="1666253597064" duration="11020000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666259920799</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改个人信息">
+      <created>1666264601254</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666264601254</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,6 @@
 package com.dino.blog.controller;
 
+import com.dino.blog.annotation.SystemLog;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.domain.entity.User;
 import com.dino.blog.enums.AppHttpCodeEnum;
@@ -21,6 +22,7 @@ public class LoginController {
     private LoginService loginService;
 
     @PostMapping("/login")
+    @SystemLog(businessName = "登陆")
     public ResponseResult login(@RequestBody User user){
         if(StringUtils.isNullOrEmpty(user.getUserName())){
             throw new SystemException(AppHttpCodeEnum.REQUIRE_USERNAME);
@@ -29,6 +31,7 @@ public class LoginController {
     }
 
     @PostMapping("/logout")
+    @SystemLog(businessName = "登出")
     public ResponseResult logout(){
         return loginService.logout();
     }

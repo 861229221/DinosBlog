@@ -1,5 +1,6 @@
 package com.dino.blog.controller;
 
+import com.dino.blog.annotation.SystemLog;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class LinkController {
     private LinkService linkService;
 
     @GetMapping("/getAllLink")
+    @SystemLog(businessName = "获取友链集合")
     public ResponseResult getAllLink() {
         return linkService.getAllLink();
     }
