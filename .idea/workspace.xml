@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="">
+    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="全局异常处理，SysException捕获">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/mapper/CommentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
     <property name="project.structure.last.edited" value="Facet" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.36480185" />
-    <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingForm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -129,7 +125,8 @@
       <workItem from="1666084039161" duration="11982000" />
       <workItem from="1666099945769" duration="149000" />
       <workItem from="1666100166147" duration="2274000" />
-      <workItem from="1666143596977" duration="14425000" />
+      <workItem from="1666143596977" duration="19132000" />
+      <workItem from="1666231258828" duration="5633000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -173,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666158715003</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="全局异常处理，SysException捕获">
+      <created>1666167290580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666167290580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +193,8 @@
     <MESSAGE value="实现了友链" />
     <MESSAGE value="解决异常" />
     <MESSAGE value="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring-Security登陆实现，并修改了DTO-&gt;VO视图实体类" />
+    <MESSAGE value="全局异常处理，SysException捕获" />
+    <option name="LAST_COMMIT_MESSAGE" value="全局异常处理，SysException捕获" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -10,6 +10,10 @@ public class SystemConstants {
      */
     public static final int ARTICLE_STATUS_NORMAL = 0;
 
+    /**
+     * 评论状态 -1 为根评论
+     */
+    public static final long ROOT_COMMENT_ID = -1;
 
     public static final String STATUS_NORMAL = "0";
     /**
