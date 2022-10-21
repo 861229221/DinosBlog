@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="">
+    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="Redis统计ViewCount">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/DinoBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/DinoBlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller/ArticleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/RedisCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UploadServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler/security" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,24 +76,35 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.36480185" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler/security" />
+      <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler" />
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils" />
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/config" />
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl" />
-      <recent name="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/controller" />
-      <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/entity" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dino.blog.filter" />
+      <recent name="com.dino.blog.config" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DinoBlogApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogAdminApplication">
     <configuration name="OSSTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dino-blog" />
       <extension name="coverage">
@@ -108,6 +117,33 @@
       <option name="MAIN_CLASS_NAME" value="com.dino.OSSTest" />
       <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dino-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dino.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dino.blog.BlogAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DinoBlogAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dino-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dino.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dino.blog.DinoBlogAdminApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,9 +161,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.OSSTest.addTest" />
+      <item itemvalue="Spring Boot.DinoBlogAdminApplication" />
+      <item itemvalue="Spring Boot.DinoBlogApplication" />
+      <item itemvalue="Spring Boot.BlogAdminApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BlogAdminApplication" />
         <item itemvalue="Spring Boot.DinoBlogApplication" />
+        <item itemvalue="Spring Boot.DinoBlogAdminApplication" />
         <item itemvalue="JUnit.OSSTest.addTest" />
       </list>
     </recent_temporary>
@@ -149,7 +193,9 @@
       <workItem from="1666143596977" duration="19132000" />
       <workItem from="1666231258828" duration="11934000" />
       <workItem from="1666253597064" duration="11240000" />
-      <workItem from="1666316592676" duration="6945000" />
+      <workItem from="1666316592676" duration="10313000" />
+      <workItem from="1666345823185" duration="1199000" />
+      <workItem from="1666348479437" duration="3639000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -235,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666267861286</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Redis统计ViewCount">
+      <created>1666338921161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666338921161</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +297,17 @@
       <list>
         <option value="$PROJECT_DIR$/dino-blog-vue/node_modules/_@vue_cli-plugin-unit-jest@4.4.4@@vue/cli-plugin-unit-jest/generator/template/tests/unit/example.spec.js" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,7 +319,8 @@
     <MESSAGE value="实现了文章评论和友链评论" />
     <MESSAGE value="修改个人信息" />
     <MESSAGE value="自定义注解，实现了日志记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义注解，实现了日志记录" />
+    <MESSAGE value="Redis统计ViewCount" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redis统计ViewCount" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

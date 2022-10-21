@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dino-admin" />
         <module name="dino-framework" />
+        <module name="dino-admin" />
         <module name="dino-blog" />
       </profile>
     </annotationProcessing>

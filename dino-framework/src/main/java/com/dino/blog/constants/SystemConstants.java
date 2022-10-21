@@ -37,11 +37,16 @@ public class SystemConstants {
     public static final String ADMAIN = "1";
 
     /**
-     * Redis用户前缀
+     * Redis前台用户前缀
      */
     public static final  String USER_LOGIN_PREFIX = "blogLogin:";
+    /**
+     * Redis后台用户登陆前缀
+     */
+    public static final String USER_ADMIN_LOGIN_PREFIX = "login";
     /**
      * Redis中存储ViewCount的Map key
      */
     public static final String REDIS_ARTICLE_VIEW_COUNT  = "articleViewCount";
+
 }
