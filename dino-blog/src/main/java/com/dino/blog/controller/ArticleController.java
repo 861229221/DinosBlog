@@ -1,11 +1,11 @@
 package com.dino.blog.controller;
 
-
 import com.dino.blog.annotation.SystemLog;
 import com.dino.blog.domain.ResponseResult;
 import com.dino.blog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 @RestController
 @RequestMapping("/article")
 public class ArticleController {
@@ -31,5 +31,11 @@ public class ArticleController {
     @SystemLog(businessName = "获取文章详细信息")
     public ResponseResult getArticleDetail(@PathVariable("id") Long id){
         return articleService.getArticleDetail(id);
+    }
+
+    @PutMapping("/updateViewCount/{articleId}")
+    @SystemLog(businessName = "增加浏览次数")
+    public ResponseResult updateViewCount(@PathVariable("articleId") Long articleId){
+        return articleService.updateViewCount(articleId);
     }
 }

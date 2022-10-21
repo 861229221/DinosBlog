@@ -40,4 +40,8 @@ public class SystemConstants {
      * Redis用户前缀
      */
     public static final  String USER_LOGIN_PREFIX = "blogLogin:";
+    /**
+     * Redis中存储ViewCount的Map key
+     */
+    public static final String REDIS_ARTICLE_VIEW_COUNT  = "articleViewCount";
 }

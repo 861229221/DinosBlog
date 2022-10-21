@@ -16,6 +16,7 @@ import com.dino.blog.mapper.ArticleMapper;
 import com.dino.blog.service.ArticleService;
 import com.dino.blog.service.CategoryService;
 import com.dino.blog.utils.BeanCopyUtils;
+import com.dino.blog.utils.RedisCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +29,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
     @Autowired
     private CategoryService categoryService;
+
+    @Autowired
+    private RedisCache redisCache;
 
     @Override
     public ResponseResult hotArticleList() {
@@ -42,6 +46,10 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         page(page,queryWrapper);
 
         List<Article> articles = page.getRecords();
+        for (Article article : articles) {
+            Integer viewCount = redisCache.getCacheMapValue(SystemConstants.REDIS_ARTICLE_VIEW_COUNT, article.getId().toString());
+            article.setViewCount(viewCount.longValue());
+        }
         //bean拷贝
 //        List<HotArticleVo> articleVos = new ArrayList<>();
 //        for (Article article : articles) {
@@ -78,12 +86,13 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 //            Category category = categoryService.getById(article.getCategoryId());
 //            article.setCategoryName(category.getName());
 //        }
-
+        for (Article article : articles) {
+            Integer viewCount = redisCache.getCacheMapValue(SystemConstants.REDIS_ARTICLE_VIEW_COUNT, article.getId().toString());
+            article.setViewCount(viewCount.longValue());
+        }
 
         //封装查询结果
         List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListVo.class);
-
-
 
 
         PageVo pageVo = new PageVo(articleListVos,page.getTotal());
@@ -99,11 +108,19 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         //根据分类id查询分类名
         Long categoryId = articleDetailVo.getCategoryId();
         Category category = categoryService.getById(categoryId);
+        Integer viewCount = redisCache.getCacheMapValue(SystemConstants.REDIS_ARTICLE_VIEW_COUNT, String.valueOf(id));
+        articleDetailVo.setViewCount(viewCount.longValue());
         if(category!=null){
             articleDetailVo.setCategoryName(category.getName());
         }
         //封装响应返回
         return ResponseResult.okResult(articleDetailVo);
+    }
+
+    @Override
+    public ResponseResult updateViewCount(Long articleId) {
+        redisCache.incrementCacheMapValue(SystemConstants.REDIS_ARTICLE_VIEW_COUNT,articleId.toString());
+        return ResponseResult.okResult();
     }
 
 
