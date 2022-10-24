@@ -6,20 +6,23 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dino.blog.constants.SystemConstants;
 import com.dino.blog.domain.ResponseResult;
-import com.dino.blog.domain.vo.ArticleDetailVo;
-import com.dino.blog.domain.vo.ArticleListVo;
-import com.dino.blog.domain.vo.HotArticleVo;
-import com.dino.blog.domain.vo.PageVo;
+import com.dino.blog.domain.dto.ArticleDto;
+import com.dino.blog.domain.entity.ArticleTag;
+import com.dino.blog.domain.vo.*;
 import com.dino.blog.domain.entity.Article;
 import com.dino.blog.domain.entity.Category;
 import com.dino.blog.mapper.ArticleMapper;
 import com.dino.blog.service.ArticleService;
+import com.dino.blog.service.ArticleTagService;
 import com.dino.blog.service.CategoryService;
+import com.dino.blog.service.TagService;
 import com.dino.blog.utils.BeanCopyUtils;
 import com.dino.blog.utils.RedisCache;
+import com.dino.blog.utils.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -32,6 +35,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
     @Autowired
     private RedisCache redisCache;
+
+    @Autowired
+    private ArticleTagService articleTagService;
 
     @Override
     public ResponseResult hotArticleList() {
@@ -120,6 +126,23 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
     @Override
     public ResponseResult updateViewCount(Long articleId) {
         redisCache.incrementCacheMapValue(SystemConstants.REDIS_ARTICLE_VIEW_COUNT,articleId.toString());
+        return ResponseResult.okResult();
+    }
+
+    @Override
+    public ResponseResult savaArticle(ArticleDto articleDto) {
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+        article.setCreateBy(SecurityUtil.getUserId());
+        article.setCreateTime(new Date());
+        article.setUpdateBy(SecurityUtil.getUserId());
+        article.setUpdateTime(new Date());
+        article.setViewCount(0L);
+        save(article);
+        List<Long> tags = articleDto.getTags();
+        for (Long tag : tags) {
+            articleTagService.save(new ArticleTag(article.getId(),tag));
+        }
+//        articleTagService
         return ResponseResult.okResult();
     }
 

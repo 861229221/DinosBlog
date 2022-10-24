@@ -1,12 +1,12 @@
 package com.dino.blog.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.dino.blog.constants.SystemConstants;
 import com.dino.blog.domain.ResponseResult;
-import com.dino.blog.domain.vo.BlogLoginVo;
-import com.dino.blog.domain.vo.UserInfoVo;
 import com.dino.blog.domain.entity.LoginUser;
 import com.dino.blog.domain.entity.User;
-import com.dino.blog.service.LoginService;
-import com.dino.blog.utils.BeanCopyUtils;
+import com.dino.blog.mapper.UserMapper;
+import com.dino.blog.service.AdminLoginService;
 import com.dino.blog.utils.JwtUtil;
 import com.dino.blog.utils.RedisCache;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,16 +16,18 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 import static com.dino.blog.constants.SystemConstants.USER_LOGIN_PREFIX;
 
 /**
- * Created 10-19-2022  11:31 AM
+ * Created 10-22-2022  9:34 AM
  * Author  Dino
  */
 @Service
-public class LoginServiceImpl implements LoginService {
+public class AdminLoginServiceImpl extends ServiceImpl<UserMapper, User> implements AdminLoginService {
     // 调用Spring-security的AuthenticationManager类认证用户名密码
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -48,12 +50,12 @@ public class LoginServiceImpl implements LoginService {
         String jwt = JwtUtil.createJWT(userId.toString());
 
         // 将用户信息存入Redis
-        redisCache.setCacheObject(USER_LOGIN_PREFIX + userId, loginUser);
+        redisCache.setCacheObject(SystemConstants.USER_ADMIN_LOGIN_PREFIX + userId, loginUser);
 
         // 封装userInfo和Token返回
-        UserInfoVo userInfoDto = BeanCopyUtils.copyBean(loginUser.getUser(), UserInfoVo.class);
-        BlogLoginVo blogLoginDto = new BlogLoginVo(jwt, userInfoDto);
-        return ResponseResult.okResult(blogLoginDto);
+        Map<String,String> map = new HashMap<>();
+        map.put(SystemConstants.TOKEN,jwt);
+        return ResponseResult.okResult(map);
     }
 
     @Override
@@ -66,4 +68,5 @@ public class LoginServiceImpl implements LoginService {
         redisCache.deleteObject(USER_LOGIN_PREFIX + userId);
         return ResponseResult.okResult();
     }
+
 }

@@ -1,4 +1,4 @@
-package com.dino.blog.domain.vo;
+package com.dino.blog.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,10 +6,14 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * Created 10-24-2022  3:33 PM
+ * Author  Dino
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ArticleVo {
+public class ArticleDto {
 
     private Long id;
     //标题
@@ -33,5 +37,4 @@ public class ArticleVo {
     private String isComment;
 
     private List<Long> tags;
-
 }

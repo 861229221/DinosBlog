@@ -49,4 +49,18 @@ public class SystemConstants {
      */
     public static final String REDIS_ARTICLE_VIEW_COUNT  = "articleViewCount";
 
+    /**
+     * 后端登陆返回字段
+     */
+    public static final String TOKEN = "token";
+
+    /**
+     * 菜单表中的类型（C:Category菜单  F: 按钮）
+     */
+    public static final String MENU_TYPE_C = "C";
+    public static final String MENU_TYPE_F = "F";
+    /**
+     * 菜单状态
+     */
+    public static final int MENU_STATUS_NORMAL = 0;
 }

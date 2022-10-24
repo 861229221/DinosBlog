@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="Redis统计ViewCount">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b0576337-fb0d-49a9-afd6-082a5f75f997" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/DinoBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-blog/src/main/java/com/dino/blog/DinoBlogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/controller/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/filter/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/UploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/vo/ArticleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/vo/ArticleVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl/TagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils/BeanCopyUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Mybatis Mapper" />
         <option value="Class" />
       </list>
     </option>
@@ -68,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler/security" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,23 +86,26 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.36480185" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils" />
+      <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/filter" />
+      <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/config" />
       <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler/security" />
       <recent name="$PROJECT_DIR$/dino-admin/src/main/java/com/dino/blog/handler" />
-      <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/utils" />
-      <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/config" />
-      <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/service/impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dino-framework/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/dino-framework/src/main/java/com/dino/blog/domain/entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dino.blog.controller" />
+      <recent name="com.dino.blog.service" />
       <recent name="com.dino.blog.filter" />
       <recent name="com.dino.blog.config" />
     </key>
@@ -102,6 +115,17 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set>
+              <option value="DinoBlogAdminApplication" />
+            </set>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogAdminApplication">
@@ -195,7 +219,9 @@
       <workItem from="1666253597064" duration="11240000" />
       <workItem from="1666316592676" duration="10313000" />
       <workItem from="1666345823185" duration="1199000" />
-      <workItem from="1666348479437" duration="3639000" />
+      <workItem from="1666348479437" duration="3722000" />
+      <workItem from="1666401802325" duration="2138000" />
+      <workItem from="1666490436690" duration="18566000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1666147970398</created>
@@ -288,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666338921161</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="前台环境通过测试">
+      <created>1666352498934</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666352498934</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +353,8 @@
     <MESSAGE value="修改个人信息" />
     <MESSAGE value="自定义注解，实现了日志记录" />
     <MESSAGE value="Redis统计ViewCount" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis统计ViewCount" />
+    <MESSAGE value="前台环境通过测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台环境通过测试" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

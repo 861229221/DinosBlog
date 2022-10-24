@@ -23,12 +23,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Objects;
 
-/**
- * Created 10-19-2022  1:52 PM
- * Author  Dino
- */
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
+
     @Autowired
     private RedisCache redisCache;
 

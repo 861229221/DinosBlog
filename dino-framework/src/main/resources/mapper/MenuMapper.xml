@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dino.blog.mapper.MenuMapper">
+    <select id="selectPermsByUserId" resultType="java.lang.String">
+        SELECT DISTINCT perms
+        FROM sys_user_role AS UR
+                 LEFT JOIN sys_role_menu AS RM ON UR.role_id = RM.role_id
+                 LEFT JOIN sys_menu AS M ON M.id = RM.menu_id
+        WHERE UR.user_id = #{useId}
+          AND M.menu_type in ('C', 'F')
+          AND M.`status` = 0
+          AND M.del_flag = 0
+    </select>
+
+    <select id="selectAllMenu" resultType="com.dino.blog.domain.entity.Menu">
+        SELECT DISTINCT M.id,
+                        M.parent_id,
+                        M.menu_name,
+                        M.path,
+                        M.component,
+                        M.visible,
+                        M.status,
+                        IFNULL(M.perms, '') AS perms,
+                        M.is_frame,
+                        M.menu_type,
+                        M.icon,
+                        M.order_num,
+                        M.create_time
+        FROM sys_menu AS M
+        WHERE M.menu_type in ('C', 'M')
+          AND M.`status` = 0
+          AND M.del_flag = 0
+        ORDER BY M.order_num ASC
+    </select>
+
+    <select id="selectRoutersMenuByUserId" resultType="com.dino.blog.domain.entity.Menu">
+        SELECT DISTINCT M.id,
+                        M.parent_id,
+                        M.menu_name,
+                        M.path,
+                        M.component,
+                        M.visible,
+                        M.status,
+                        IFNULL(M.perms, '') AS perms,
+                        M.is_frame,
+                        M.menu_type,
+                        M.icon,
+                        M.order_num,
+                        M.create_time
+        FROM sys_user_role AS UR
+                 LEFT JOIN sys_role_menu AS RM ON UR.role_id = RM.role_id
+                 LEFT JOIN sys_menu AS M ON M.id = RM.menu_id
+        WHERE UR.user_id = #{useId}
+          AND M.menu_type in ('C', 'M')
+          AND M.`status` = 0
+          AND M.del_flag = 0
+        ORDER BY M.order_num ASC
+    </select>
+</mapper>
